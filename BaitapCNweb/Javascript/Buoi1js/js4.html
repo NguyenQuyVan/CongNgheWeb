@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = 10, b = 20, c = 30;
+        document.write("<p>" + a + "<sup>2</sup>" + "+" + b + "x" + "+" + c);
+        if (a == 0) {
+
+            if (b == 0) {
+                if (c == 0) {
+                    document.write('<p>Phuong trinh vo so nghiem</p>')
+
+                } else {
+                    document.write('<p>Phuong trinh vo nghiem<p/>')
+                }
+            } else {
+                document.write('<span>Kết quả là :phuong trinh co nghiem duy nhat: </span>' + (-c / b))
+            }
+        } else {
+            var delta = b * b - 4 * a * c;
+            if (delta > 0) {
+                var x1 = (-b + Math.sqrt(delta)) / (2 * a);
+                var x2 = (-b - Math.sqrt(delta)) / (2 * a);
+                document.write("Kết quả là: x1=" + x1 + "x2=" + x2);
+            } else if (delta == 0) {
+                var sum = -b / 2 * a
+                document.write('<span>Kết quả là :nghiệm kép x1 = x2 = </span>' + sum)
+            } else {
+                document.write("<p>Kết quả là : PTVN</p>")
+            }
+        }
+
+    </script>
+</body>
+
+</html>

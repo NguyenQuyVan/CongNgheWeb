@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https:ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>test</title>
+    <script>
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).css("background-color","red");
+            });
+            $("div").on("click",function(){
+                $(this).css("background-color","yellow");
+            });
+        });
+        // $(document).ready(function(){
+        //     $("p").click(function(){
+        //         $(this).css("text-align","center");
+        //     });
+        // });
+        // $(document).ready(function(){
+        //     $("a.div").click(function(){
+        //         $(this).alert("thanh Nhã");
+        //     });
+        // });
+    </script>
+</head>
+<body>
+   <p>bấm vào 2 lần đổi màu</p>
+   <div>bấm vào đổi màu </div>
+   <div>đoạn văn bản</div>
+   <button>click vào để canh giữa văn bản</button>
+
+</body>
+</html>

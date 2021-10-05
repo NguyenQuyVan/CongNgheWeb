@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <script>
+        const data={
+                code:42,
+                items:[
+                    {
+                        id:1,
+                        name:'Nhã'
+                    },
+                    {
+                        id:2,
+                        name:"Nhân"
+                    },
+                    {
+                        id:3,
+                        name:"Tuyết"
+                    }
+                ]
+        };
+        document.write(data.code+"<br>");
+        document.write(data.items+"<br>");
+        var d=data.items; //mang ofject
+        for(var x in d){
+            var list=d[x];
+            console.log("id="+list.id,"name="+list.name+"\n");
+            document.write("id="+list.id,"name="+list.name+"<br>");
+        }
+     var html = "";
+        for (const key in data) {
+          if (key == "items") {
+                for (const item of data[key]) {
+                    html += " <span>"+item.id+"</span>"+
+                       
+                         "<span>"+item.name+"</span>";
+                  
+                }
+                var d=data.key; //mang ofject
+                    for(var x in d){
+                     var list=d[x];
+                     console.log("id="+list.id,"name="+list.name+"\n");
+                     document.write("id="+list.id,"name="+list.name+"<br>");
+                }
+                document.write(html);
+            }
+            console.log(key+"\n");
+        }
+       // document.getElementById("show").innerHTML = html;
+      
+    </script>
+    <body>
+        <div id="show"></div>
+
+    </body>
+</html>

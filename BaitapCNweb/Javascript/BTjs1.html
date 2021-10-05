@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function DoiMauNen() {
+                document.bgColor=eyn.mau.value;
+            }
+        </script>
+
+<script>
+    function kttb() {
+        if(asd.NoiDung.value.length>200){
+            alert("Bạn đã gõ quá kí tự cho phép!")
+            asd.sokitu.value=asd.NoiDung.value.length;
+        }else{
+            asd.sokitu.value=asd.NoiDung.value.length;
+        }
+    }
+</script>
+    </head>
+
+    <body>
+        <script>
+            /*1 tạo trang web sau và xử lý*/
+            function ntrrr()
+            {
+                var a="Xin Chào Các Bạn"
+                document.getElementById("demo").innerHTML = a;
+            }           
+        </script>            
+            <button onclick="ntrrr();">Welcome</button>
+            <textarea name="textbox" cols="20" rows="1">Xin Chào Các Bạn</textarea>
+            <p id="demo"></p>  
+            
+            
+        <form name="frm">
+        <input type="button" value="xanh dương"  onclick="window.document.bgColor='blue'; "/> 
+        <input type="button" value="đỏ"  onclick="window.document.bgColor='red';"/> 
+        </form>   
+
+        hãy chọn màu bạn muốn đổi:
+        <form name="eyn">
+            <select name="mau" onchange="DoiMauNen();">
+                <option value="red">Màu Đỏ</option> 
+                <option value="blue">Xanh Dương</option> 
+                <option value="brown">Nâu</option> 
+                <option value="lavender">Xanh nhạt</option> 
+            </select>
+        </form>
+         
+        
+        <form name="asd">
+            Số kí tự cần gõ <input type="text" name="sokitu"/>
+            <textarea name="NoiDung" value="" cols="20" rows="10" onkeydown="kttb();">
+            </textarea>
+        </form>
+
+
+        <form name="act" align="justify" >
+            Họ Tên: <input type="text" name="HoTen" onmouseover="alert('button, text, nam, nữ');"/> <br>
+            Giới Tính : <br>
+            <input type="radio" name="GioiTinh" value="Nam" onmouseover="alert('button, text, nam, nữ');"/>Nam<br>
+            <input type="radio" name="GioiTinh" value="Nữ" onmouseover="alert('button, text, nam, nữ');"/>Nữ<br>
+            <input type="button" name="Gui" value="Gửi" onmouseover="alert('button, text, nam, nữ');"/>
+        </form>
+
+        
+    </body>
+</html>

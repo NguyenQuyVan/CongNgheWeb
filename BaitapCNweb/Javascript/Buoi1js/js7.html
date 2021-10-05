@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //minh họa biến toàn cục và biến cục bộ
+        var a=10,b=20; //biến toàn cục (global variable)
+        function sum(){
+            return (a+b);
+        }
+        function tru() {
+            var a;
+            a=15;//local variable
+            return (a-b);
+ 
+        }
+    //    document.write("<h2>"+sum()+"</h2>");
+     //   document.write("<h2>"+tru()+"</h2>");
+     </script>
+</head>
+
+<body>
+       Phép toán cộng <p id="cong"></p>
+       Phép toán trừ <p id="tru"></p>
+       <script>
+           document.getElementById("cong").innerText=sum();
+           document.getElementById("tru").innerText=tru();
+       </script>
+       
+</body>
+
+</html>

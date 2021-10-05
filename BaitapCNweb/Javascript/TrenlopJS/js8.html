@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    
+    <body>
+        <div id="list"></div>
+
+    </body>
+    
+    <script>
+        const data={
+                code:42,
+                items:[
+                    {
+                        id:1,
+                        name:'Nhã'
+                    },
+                    {
+                        id:2,
+                        name:"Nhân"
+                    },
+                    {
+                        id:3,
+                        name:"Tuyết"
+                    }
+                ]
+        };
+        let html = '<ul>';
+        data.items.forEach(element => {
+            html += '<li>' + element.id + " "+element.name+'</li>' ;
+         
+            });
+         html += '</ul>';
+        document.getElementById('list').innerHTML= html;
+      
+    </script>
+</html>

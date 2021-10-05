@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="jquery/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".a").click(function(){
+    //Khi su kien ma click vao nut button
+     console.log("đang click");
+     $(".a").hide(); //ẩn thẻ p
+  });
+
+  $(".b").click(function(){
+    //Khi su kien ma click vao nut button
+     console.log("đang click");
+     $("p").hide(); //ẩn thẻ p
+  });
+});
+</script>
+</head>
+<body>
+  <p class="a">Xin chào các bạn</p>
+  <p>Xin chào các bạn 1</p>
+  <p>Xin chào các bạn 2</p>
+  <p>Xin chào các bạn 3</p>
+ <button class="a">Click me 1</button><button class="b">Click me 1</button>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+       
+    </head>
+    <body>     
+        <script>
+            /*1 tạo trang web sau và xử lý
+               function xn(){
+                   var x=0;
+                   var n=0;
+                   let i = 1;
+                while (i < n) {
+                    x = x * n;
+                    n = n + 1;
+                   }
+                   document.write(xn);
+               }
+               var i=1;
+               var kq=1;
+               while(i <= n){
+                    kq =kq *x
+                    i++;
+               }
+               */
+               const data={
+                        code:42,
+                        items:[
+                       {
+                           id:1,
+                           name:'Nhã'
+                       },
+                       {
+                           id:2,
+                           name:"Nhân"
+                       },
+                       {
+                           id:3,
+                           name:"Tuyết"
+                       }
+                   ]
+               };
+               doucument.write(data.code+"<br>");
+               doucument.write(data.items+"<br>");
+               var d=data.items;
+               for (var x in d) {
+                   var list=d[x];
+                   console.log("id="+list.id,"Name="+list.name+"\n") 
+                   doucument.write("id="+list.id,"Name="+list.name+"<br>") ;
+               };             
+        </script>                                     
+    </body>
+</html>

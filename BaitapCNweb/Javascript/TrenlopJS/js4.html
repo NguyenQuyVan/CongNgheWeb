@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            //Cho n và x được nhập từ cửa sổ 
+            //tính x^n với n>0 
+            //Vòng lặp
+            // x=3, n=2 xn=3*3
+            var n = prompt("Nhap n :", 0);
+             var x = prompt("Nhap x: ", 0);
+            document.write(giaithua(Number(x), Number(n)));
+            function giaithua(x, n) {
+            var result = 1;
+            for (var i = 1; i <= n; i++) {
+                result *= x;
+            }
+            return result;
+        }
+        
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

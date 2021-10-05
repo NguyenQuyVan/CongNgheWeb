@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       //minh họa biến toàn cục và biến cục bộ
+       var a=10,b=20; //biến toàn cục (global variable)
+       function sum(){
+           return (a+b);
+       }
+       function tru() {
+           var a;
+           a=15;//local variable
+           return (a-b);
+
+       }
+       document.write("<h2>"+sum()+"</h2>");
+       document.write("<h2>"+tru()+"</h2>");
+    </script>
+</body>
+
+</html>

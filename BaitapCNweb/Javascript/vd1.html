@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            var a=10,b=20,c=30,delta, x, x1, x2;
+delta=b*b - 4*a*c
+if (delta<0)
+{
+    document.write('phương trình vô nghiệm');
+}
+else if (delta==0)
+{
+    document.write('phương trình có nghiệm kép');
+
+}
+
+else if(delta>0)
+{
+    x1=-b+SQRT(delta)/(2*a);
+    x2=-b-SQRT(delta)/2*a
+    document.write('ax<sub>2</sub>+bx+c = x1='+x1+'x2='+x2);
+}
+        
+        </script>
+    </body>
+</html>

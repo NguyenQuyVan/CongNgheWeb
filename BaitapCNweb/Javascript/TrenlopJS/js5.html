@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <form align="center" name="nhap">
+        <p><label for="x">x:</label>
+            <input type="text" id="a" value="" ></p>
+        <p><label for ="n">n:</label>
+            <input type="text" id="b" value="" ></p>
+        <p>
+            <input type="button" value="Giải" onclick="giai()">
+         </p>
+        <p><label for="Kết quả">Kết quả:</label>
+            <input type="text" name="c"></p>
+    </form>
+    <script>
+        function giai(){
+            var x,n;
+            x = document.nhap.a.value;
+            n = document.nhap.b.value;
+            //x=a**b;
+            var result = 1;
+            for (var i = 1; i <= n; i++) {
+                result *= x;
+            }
+            document.nhap.c.value=result;
+        }
+    </script>
+    <body>
+        
+
+    </body>
+</html>

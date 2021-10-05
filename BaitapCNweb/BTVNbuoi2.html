@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <title>BTNV buổi 2</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        1. tạo trang web có nội dung sau:
+        <center><table border=1 style="width:40%">
+            <tr ><td align="center">1</td><td colspan="2" align="center">2</td></tr>
+            <tr><td align="center">4</td><td align="center">3</td><td rowspan="2" align="center">5</td></tr>
+            <tr><td align="center">6</td><td align="center">7</td></tr>
+        </table>
+        </center>
+        2. tạo trang web có nội dung sau:      
+            <table border=1 align ="center" style="width:40%">
+                <tr bgcolor="#FF6633"><th rowspan="2" align="center">STT</th><th rowspan="2" align="center">Họ Tên</th><th rowspan="2" align="center">Giới Tính</th><th colspan="2" align="center">Điểm</th></tr>
+                <tr bgcolor="#CC3300"><th align="center"><font color="white">Môn AV</font></th><th align="center"><font color="white">Môn Tin Học</font></th></tr>
+                <tr><td>1</td><td>Võ Thanh C</td><td>Nam</td><td align="center">5</td><td align="center">6</td></tr>
+                <tr><td>2</td><td>Trần Thanh Nhã</td><td>Nữ</td><td align="center">8</td><td align="center">9</td></tr>
+            </table>  
+        3. tạo trang web có nội dung sau sử dụng table để trình bày dữ liệu
+        <table align="center" >
+            <tr><th><h2>Thực Đơn Hôm Nay Có Gì?</h2></th><td></td><td></td><td></td></tr>
+            <tr><td>&nbsp;&nbsp;&nbsp;&#149; Tôm xào chua ngọt</td><td>200,000đ/dĩa</td><td></td><td rowspan="6">Giảm 20% trong ngày hôm nay></td></tr>
+            <tr><td>&nbsp;&nbsp;&nbsp;&#149; Cải xanh luộc</td><td>20,000đ/dĩa</td><td></td></tr>
+            <tr><td>&nbsp;&nbsp;&nbsp;&#149; Cua rang me </td><td>50,000đ/dĩa</td><td></td></tr>
+            <tr><td>&nbsp;&nbsp;&nbsp;&#149; Cá lóc hấp dầu</td><td>100,000đ/tô</td><td></td><td></td></tr>
+            <tr><td><a href="tel:0939191028">Liên hệ:0939191028</a></td><td>website:</td><td><a href="https://monngon.com">www.monngon.com</a></td></tr>
+        </table>
+        4. tạo form sau sử dụng table để trình bày dữ liệu:
+        <form name="form1" action="" method="GET">
+        <table align="center">
+            <tr>
+                <th colspan="2" bgcolor="red">Điều Tra Khách Hàng</th>
+                
+            </tr>
+            <tr><td>Tên khách hàng:</td><td><input type="text" name="txttenkh" value="" ></td></tr>
+            <tr>
+                <td>Giới Tính:</td>
+                <td>
+                    <select name="cbgt">
+                        <option value="1">Nam</option>
+                        <option value="0">Nữ</option>
+                    </select>    
+                </td>
+            </tr>
+            <tr><td>
+                Ngày sinh:
+            </td><td>
+                <select name="cbngay">
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="1">19</option>
+                    <option value="2">20</option>
+                    <option value="3">21</option>
+                    <option value="4">22</option>
+                    <option value="5">23</option>
+                    <option value="6">24</option>
+                    <option value="7">25</option>
+                    <option value="8">26</option>
+                    <option value="9">27</option>
+                    <option value="10">28</option>
+                    <option value="11">29</option>
+                    <option value="12">30</option>
+                    <option value="12">31</option>
+                </select>
+                <select name="cbthang">
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select> <input type="text" name="cbnam">               
+            </td></tr>
+            <tr><td >Sở thích:
+                <td align="center" border=1>
+                    <input type="checkbox" name="boi" value="bơi lội"> Bơi &nbsp;
+                    <input type="checkbox" name="hat" value="ca hát"> Ca Hát &nbsp;
+                </td>
+            </td></tr>
+            <tr><td>Trình độ:</td>
+            <td>
+                <select name="cbtrinhdo" multiple>
+                    <option value="Tiến Sĩ">TS</option>
+                    <option value="Thạc Sĩ">ThS</option>
+                    <option value="Cử Nhân">Cử Nhân</option>
+                </select>
+            </td></tr>
+            <tr>
+                <td>Ngoại Ngữ:</td>
+                <td>
+                    <select name="cbngoaingu">
+                        <option value="chứng chỉ A">chứng chỉ A</option>
+                        <option value="chứng chỉ B">chứng chỉ B</option>
+                        <option value="chứng chỉ C">chứng chỉ C</option>
+                    </select>    
+                </td>
+            </tr>
+            <TR><td>Tình Trạng:</td><td>
+                <input type="radio" name="tinhtranggd" value="độc thân" checked/>độc thân
+                <input type="radio" name="tinhtranggd" value="có gia đình"/>có gia đình
+            </td></TR>
+            <tr><td><label>Ghi Chú:</label></td><td>
+                <textarea name="txtghichu" ></textarea>
+            </td></tr>
+            <tr><td><label>Hình Ảnh:</label></td>
+            <td>
+                <input type ="file" name="fileanh">
+            </td>
+        </tr>
+        <tr>
+            <td>Xem trước hình ảnh</td>
+            <td>
+            </td></tr>
+            <tr><td align="center"><img src="images1.jfif" alt="Xem ảnh trước" height="170px" width="200px" ></td></tr>
+        <tr align="center"><td colspan="2"><input type="submit" name="cmdluu" value="lưu thông tin"/>&nbsp;
+        <input type="button" name="cmdxoa" value="Xóa">&nbsp;<input type="reset" name="cmdsua" value="Sửa">&nbsp;
+        <input type="button" name="cmdlamlai" value="Làm lại"/></td></tr>      
+        </table>
+        <table align="center" class="table_display">
+            <col width="20%">
+            <col width="20%">
+            <col width="30%">
+            <col width="20%">
+            <col width="15%">
+            <tr><th colspan="5">
+                Danh Sách Khách Hàng
+            </th></tr>
+            <tr bgcolor="orange"><th>STT</th><th>
+                Họ Tên
+            </th><th>Giới tính</th><th>Ngày Sinh</th><th>Trình Độ</th></tr>
+            <tr><td>1</td><td>Võ Tin</td><td>Nam</td><td>11/12/1987</td><td>TS</td></tr>
+            <tr><td>2</td><td>An Nam</td><td>Nữ</td><td>11/11/1989</td><td>Ths</td></tr>
+            <tr><td>3</td><td>Vũ Thư</td><td>Nữ</td><td>1/2/1967</td><td>TS</td></tr>
+            <tr><td> </td></tr>
+            <tr><td>Tổng số :3 khách hàng</td></tr>
+        </table>
+        <table class="table_display" border="1">
+            <col width="20%">
+            <col width="20%">
+            <col width="30%">
+            <col width="15%">
+            <col width="15%">
+         
+            <thead>...</thead>
+            </tbody>...</tbody>
+         </table>
+        </form>
+    </body>
+</html>

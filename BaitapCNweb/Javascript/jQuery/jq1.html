@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="jquery/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ $("p").click(function(){
+    $(this).css("background-color","red"); 
+  });
+  $("div").on("click",function(){
+    $(this).css("background-color","red"); 
+});
+$(".a").dblclick(function(){
+    $(this).css("background-color","red"); 
+  });
+$("b").on("dblclick",function(){
+    $(this).css("background-color","red"); 
+});
+$("div").on("blur",function(){
+        $(this).css("background-color","yellow");
+  });
+  $("div").on("focus",function(){
+        $(this).css("background-color","red");
+  });
+  $("p").on({
+      mouseleave:function(){
+        $(this).css("background-color","yellow");      
+    }
+});
+$("b").on({
+      mouseleave:function(){
+        $(this).css("background-color","yellow");      
+    }
+});
+
+
+});
+
+</script>
+</head>
+<body>
+   <div>Click vào thẻ div</div>
+   <p>Click vào thẻ p</p>
+   <p class="a">Click vào thẻ p</p>
+   <b>dbClick vào thẻ B</b>
+</body>
+</html>

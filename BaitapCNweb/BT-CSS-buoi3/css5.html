@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Ví dụ external style sheet</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <style>
+            h2.a{
+                text-decoration: underline;
+            }
+            h1,h2,h3,h4,h5,h6{
+                color: yellowgreen;
+            }
+            div i{
+                background-color: blue;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h2 class="a">Heading 2</h2>
+        <h4>Heading 4</h4>
+        <div><i>Đoạn văn bản</i></div>
+        <!-- sẽ ảnh hưởng style div i-->
+        <i><div>Đoạn văn bản</div></i>
+    </body>
+</html>
