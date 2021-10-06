@@ -19,6 +19,32 @@
         }
     }
 </script>
+<script>         
+    function tinhThanhTien() {
+        var sl=jh.soluong.value;
+        var gia=jh.gia.value;
+        jh.thanhtien.value=sl*gia;
+    }
+</script> 
+
+<script>
+    /*7 tạo trang web sau và xử lý*/
+    var a=prompt("Nhập tên của bạn: ","");
+    var b=prompt("Nhập tuổi của bạn: ","0");
+    document.write("<b>Tên của ban: "+a+"</b>"+"<br>"+"<u>Tuổi của bạn: "+b+"</u><br>")
+</script>
+
+<script>
+    /*8 tạo trang web sau và xử lý*/
+    var a=prompt("Nhập vào 1 số nguyên: ","0");
+    if(a==1)
+     window.open('http://www.facebook', 'width=600,height=600');
+        else if(a==2)
+         window.open('http://www.hust.edu.vn', 'width=600,height=600');
+    else{
+        window.open('http://www.google.com', 'width=600,height=600');
+    }                  
+</script>
     </head>
 
     <body>
@@ -65,7 +91,27 @@
             <input type="radio" name="GioiTinh" value="Nữ" onmouseover="alert('button, text, nam, nữ');"/>Nữ<br>
             <input type="button" name="Gui" value="Gửi" onmouseover="alert('button, text, nam, nữ');"/>
         </form>
+        <form name="jh" align="justify">
+            <h2>Bạn hãy nhập vào số lượng và giá:</h2> <br>
+            Số Lượng: <input type="text" name="soluong" value=""/>
+            đơn giá: <input type="text" name="gia" value="" onkeyup="tinhThanhTien();"/><br>
+            <br>
+            thành tiền <input type="text" name="thanhtien" value=""/><br>      
+        </form>
 
-        
+        <!-- 9 tạo trang web sau và xử lý -->
+        <script language="JavaScript">
+            var a = new Date();
+            document.title = "Bây giờ là:" + a.getHours()+" giờ "+ a.getMinutes()+ " phút.";
+            </script>
+         <!-- 10 tạo trang web sau và xử lý -->   
+            <script language = "JavaScript">
+                var a =new Date();
+                var NamSinh, NamHienTai;
+                NamHienTai = a.getYear();
+                NamSinh = prompt("Năm sinh của bạn ? :","");
+                alert("Tuổi của bạn là: "+ (NamHienTai-NamSinh));
+
+            </script>  
     </body>
 </html>

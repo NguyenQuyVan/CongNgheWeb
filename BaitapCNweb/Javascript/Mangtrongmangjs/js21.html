@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+           function PTB1() {
+               
+           
+               var a=document.frmpt.hsa.value;
+               var b=document.frmpt.hsb.value;
+               if(a==0)
+                    if(b==0){
+                       // document.write("<h2>PTVSN</h2>");
+                        document.frmpt.x.value="PTVSN";
+                    }
+                    else  //b!=0
+                     //  document.write("<i>PTVN</i>");
+                       document.frmpt.x.value="PTVN";
+                else{
+                    var x;
+                    x=-b/a;
+                 //   document.write("<h1>x="+x+"</h1>"); //dấu + dùng để nối chuỗi
+                    document.frmpt.x.value=x;
+                }
+           
+            }
+        </script>
+    </head>
+    <body>
+        <form name="frmpt">
+         Hệ số a: <input type="text" name="hsa" value="" /> <br>
+         Hệ số b: <input type="text" name="hsb" value="" /> <br>
+         Nghiệm x: <input type="text" name="x" value="" /> <br>
+         <input type="button" name="cmdgiai" value="Giải" onclick="PTB1();" />
+        </form>
+    </body>
+</html>

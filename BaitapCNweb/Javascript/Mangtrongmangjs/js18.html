@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    
+    <body>
+        <div id="list"></div>
+       
+        <script>
+            //khai báo 1 map
+            const fru=new Map([
+                ["cam",500],
+                ["Bưởi",300],
+                ["Dừa",100]
+            ]);
+            var html='';
+            var gia=0;
+            for(var x of fru){
+                for(var y of x){
+                   // if((typeof y)=='number')
+                   if(!isNaN(y))
+                        gia=gia+y;
+                }
+                html=gia+"<br>";
+                console.log(x);
+            }
+
+           document.getElementById("list").innerHTML=html;
+        </script>
+    </body>
+    
+    
+</html>

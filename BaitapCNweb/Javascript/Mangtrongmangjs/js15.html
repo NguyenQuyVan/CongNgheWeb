@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    
+    <body>
+        <div id="list"></div>
+        <div id="list1"></div>
+        <script>
+            //khai báo 1mảng
+            const person=[20,30,10,5];
+            person.forEach(ShowData);
+            var html='';
+            function ShowData(value,index,array){
+                html='';   
+                html=index+"->"+value;
+                console.log(html);
+                document.getElementById("list").append(html);
+            }
+            document.write("\n");
+            person.forEach(x=>{
+                html=x;
+                document.getElementById("list1").append(html);
+            });
+       //     document.getElementById("list").innerHTML=html;
+        </script>
+    </body>
+    
+    
+</html>

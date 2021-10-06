@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            //data dạng đối tượng
+           const data={
+               code:200,
+               items:[
+                   [{id:1,name:"Thanh Nhã"}],
+                   [{id:2,name:"Võ Thị An"}],
+                   [{id:3,name:"Võ Thành Trung"}]
+                       
+               ]
+                //Sử dụng vòng for
+                
+           }
+           document.write(data.code+"<br>");
+            document.write(data.items+"<br>");
+            var d=data.items; //mảng object
+            for (var x in d){       
+                var list=d[x];
+                console.log(list);
+                 for(y in list){
+                     var kq=list[y];
+                     document.write("id"+kq.id+"name="+kq.name+"<br>");
+                 }
+               
+            }
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

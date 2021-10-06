@@ -2,43 +2,32 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="Content-Type" content="text/html">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <form name="lj" align="center">
-            <h2>Bạn hãy nhập vào số lượng và giá:</h2> <br>
-            <label for="soluong"> Số lượng:</label> 
-                <input type="text" id="a" value="">
-            <label for="dongia"> Đơn giá:</label> 
-                <input type="text" id="a" value=""><br>
-            <label for="soluong"> Thành tiền:</label> 
-                <input type="text" id="a" value="">
-            
-
-        </form>
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
     </head>
-
-    <body>
-       <script>
-           function  tinhThanhTien() {
-                
-                var sl=parseInt(frm.soluong.value);
-                var gia=parseInt(frm.gia.value);
-               if( typeof(sl)!='number'){
-                   
-                   alert("Nhập giá trị là số");
-                   frm.soluong.value="";
-                   frm.soluong.focus();
-               }else if(typeof(gia)!='number'){
-                   alert("Nhập giá trị là số");
-                   frm.gia.value="";
-                   frm.gia.focus();
-               }else{
-    
-               
-                frm.thanhtien.value=sl*gia;
-               }
-            }
-       </script>
-    
+    <body>      
+            <script language="JavaScript">
+                function tinhw(){
+                    a=document.bj.x.value;
+                    b=document.bj.y.value;
+                    var result = 1;
+                    for (var i = 1; i <= n; i++) {
+                     result *= a;
+                                }
+                    document.bj.z.value=result;
+                        }
+            </script>
+            <form name="bj">
+                 <label for="x">Nhập giá trị số thứ nhất: </label> 
+                 <input type="text" id="x" value="" ></p>              
+                <input type="button" name="+" onclick="tinhw()" value="+">                
+                <input type="button" name="-" onclick="tinhw()" value="-">
+                <input type="button" name="*" onclick="tinhw()" value="*">               
+                <input type="button" name="/" onclick="tinhw()" value="/">
+                <input type="button" name="^" onclick="tinhw()" value="^"><br>
+                <label for="y">Nhập giá trị số thứ hai: </label> 
+                <input type="text" id="y" value="" ><br>
+                <label for="Kết quả">Kết quả:</label>
+                <input type="text" name="z"><br>
+            </form>
     </body>
 </html>

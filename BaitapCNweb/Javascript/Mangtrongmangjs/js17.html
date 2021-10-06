@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    
+    <body>
+        <div id="list"></div>
+       
+        <script>
+            //khai báo 1mảng
+            const fru=new Map([
+                ["cam",500],
+                ["Bưởi",300],
+                ["Dừa",100]
+            ]);
+            var htm='';
+           for(var x of fru){
+            htm+=x+" <br>";
+                for(y of x){
+                    console.log(y);
+                    htm=htm+y+"<br>";
+                }
+
+            console.log(x);
+           }
+           document.getElementById("list").innerHTML=htm;
+        </script>
+    </body>
+    
+    
+</html>

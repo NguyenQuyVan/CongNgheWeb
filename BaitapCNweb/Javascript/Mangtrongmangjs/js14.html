@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    
+    <body>
+        <div id="list"></div>
+        <script>
+            //khai báo 1mảng
+            const person=[20,30,10,5];
+          
+            var html='';
+            for(var x in person){
+            //    document.write(x+"->"+person[x]+"<br>");
+                html=html+x+"->"+person[x]+"<br>";
+                console.log(html);
+            }
+            document.getElementById("list").innerHTML=html;
+        </script>
+    </body>
+    
+    
+</html>

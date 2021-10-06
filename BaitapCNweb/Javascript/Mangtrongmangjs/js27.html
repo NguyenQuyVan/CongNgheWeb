@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            function DoiMau(frm) {
+                document.bgColor=frm.mau.value;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="frm">
+            <select name="mau" onchange="DoiMau(this.form);" onfocus="document.bgColor='green';">
+                <option value="red">Màu đỏ</option>
+                <option value="blue">Màu xanh</option>
+                <option value="yellow">Màu vàng</option>
+                <option value="brown">Màu nâu</option>
+            </select>
+        </form>
+    </body>
+</html>
