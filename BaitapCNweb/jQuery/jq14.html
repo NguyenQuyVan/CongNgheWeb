@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="jquery/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ 
+  
+    $(".btclick").on("click", function () {
+
+            $(".p1").text(function(i,orgin){
+                    return "văn bản cũ:"+orgin+" văn bản mới tại index"+i; 
+            });
+                
+    })
+
+});
+
+
+</script>
+</head>
+<body>
+   
+     <p class="p1">Xin chào các bạn</p>
+     <button class="btclick">Hiển thị dữ liệu cũ mới</button>
+</body>
+</html>

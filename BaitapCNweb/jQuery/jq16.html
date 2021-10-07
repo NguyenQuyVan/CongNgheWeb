@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="jquery/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ /*
+  
+    $(".btclick").on("click", function () {
+
+        $("li").text(function(index, orgin) {
+                    if (index == 0)
+                        return "Tôm";
+                    else if (index == 1)
+                        return "Cua";
+                    else
+                        return "Cá";
+                });
+
+    })
+*/
+$(".btclick").on("click", function () {
+
+    $("ul li").text(function(i,orgin){
+        return orgin+" có index= "+(i+1);
+       })
+
+
+})
+});
+
+
+</script>
+</head>
+<body>
+   
+    <ul>
+        <li>Tôm </li>
+        <li>Cua</li>
+        <li>Cá</li>
+    </ul>
+     <button class="btclick">Hiển thị dữ liệu cũ mới</button>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="jquery/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ /*
+    $(".btgetimage").on("click", function(){
+                $(".img1").attr("src", $(".img").attr("src"))
+                .css("display", "flex")
+                .css("float", "left");
+
+    });
+   
+    $(".btgetimage").on("click", function(){
+         var url=$(".img").attr("src");
+         $(".img1").fadeIn(3000).attr("src",url);
+
+
+    });
+ */
+    $(".btgetimage").on("click", function () {
+                var img = $(".img");
+                var img1 = $(".img1");
+                img1.attr("src", img.attr("src"));
+                img1.show();
+                
+            })
+
+});
+
+
+</script>
+</head>
+<body>
+   
+      <img idnha="abc"   class="img" src="images/noavatarfemale.png" />
+      <img  style="display: none;" class="img1" src="" />
+      <br>
+     <button class="btgetimage">Lấy tên file của ảnh</button>
+</body>
+</html>

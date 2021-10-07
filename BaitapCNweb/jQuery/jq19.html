@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="jquery/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".btclick").on("click", function () {
+        $("h1,p").addClass("mauchuxanh"); 
+
+        $("div").addClass("impor mauchuxanh"); 
+    })
+    $(".btclickremove").on("click", function () {
+        $("h1,p").removeClass("mauchuxanh"); 
+    })
+});
+
+
+</script>
+<style>
+    .impor{
+        font-size: x-large;
+        font-weight: bold;
+    }
+    .mauchuxanh{
+        color: blue;
+    }
+</style>
+</head>
+<body>
+   
+  <h1>Heading 1</h1>
+  <p>Văn bản</p>
+ <div>Văn bản ảnh hưởng bởi class mauchuxanh và impor</div>
+     <button class="btclick">add class</button>
+     <button class="btclickremove">remove class</button>
+</body>
+</html>

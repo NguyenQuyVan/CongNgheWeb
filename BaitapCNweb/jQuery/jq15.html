@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="jquery/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ 
+  
+    $(".btclick").on("click", function () {
+
+            $("p").text(function(i,orgin){
+                return orgin+" có index "+(i+1);
+ 
+            });
+                
+    })
+
+});
+
+
+</script>
+</head>
+<body>
+   
+     <p>Đoạn 1</p>
+     <p>Đoạn 2</p>
+     <button class="btclick">Hiển thị dữ liệu cũ mới</button>
+</body>
+</html>

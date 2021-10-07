@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="jquery/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ 
+    $(".btngiai").on("click", function(){
+       
+       var a=$(".hsa").val();
+       var b=$(".hsb").val();
+       console.log(""+a);
+       if(a==""){
+            $(".tb").text("Hệ số a không được khoảng trắng");
+            $(".tb1").html("<b>Hệ số a không được khoảng trắng<b>");
+       }else if(b==""){
+            $(".tb").text("Hệ số b không được khoảng trắng");
+            $(".tb1").html("<b>Hệ số b không được khoảng trắng<b>");
+       }else{
+       if(a==0){ //"0"=0 true
+           if(b==0){
+            $(".x").val("PTVSN");
+           }else
+           {
+            $(".x").val("PTVN");
+           }
+       }else
+       {
+           var x=-b/a;
+           $(".x").val(x);
+       }
+    }
+    });
+    $(".btnoidung").on("click", function(){
+        alert($(".tb").text());
+    });
+    $(".btnoidunghtml").on("click", function(){
+        alert($(".tb1").html());
+    });
+});
+
+
+</script>
+</head>
+<body>
+   
+       Hệ số a:<input type="text" name="" class="hsa" /><br>
+
+       Hệ số b:<input type="text" name="" class="hsb"/><br>
+
+       Kết quả:<input type="text" name="" class="x" /><br>
+      
+       <button class="btngiai">Giải</button>&nbsp;<button class="btnlamlai">Làm lại</button>
+       <br>
+        <i class="tb"></i> <br>
+        <u class="tb1"></u>
+        <button class="btnoidung">Lấy nội dung text</button> <br>
+        <button class="btnoidunghtml">Lấy nội dung html</button>
+</body>
+</html>
