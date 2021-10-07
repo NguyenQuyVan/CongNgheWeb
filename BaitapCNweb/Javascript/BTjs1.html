@@ -45,6 +45,85 @@
         window.open('http://www.google.com', 'width=600,height=600');
     }                  
 </script>
+<script language="JavaScript">
+    function tinhw(){
+       var a=bj.x.value;
+       var b=bj.y.value;
+       var z;
+         z=a*b;
+            bj.z.value=z;                
+    }
+    function tinhq(){
+       var a=bj.x.value;
+       var b=bj.y.value;
+       var a1=Number(a);
+       var b1=Number(b);
+       var z;              
+         z = a1+b1;
+            bj.z.value=z;            
+    }  
+    function tinhe(){
+       var a=bj.x.value;
+       var b=bj.y.value;
+       var z;
+         z=a - b;
+            bj.z.value=z;                
+    }     
+    function tinhr(){
+       var a=bj.x.value;
+       var b=bj.y.value;
+       var z;
+         z=a / b;
+            bj.z.value=z;                
+    }
+    function tinht(){
+       var a=bj.x.value;
+       var b=bj.y.value;
+       var z;
+         z=a**b;
+            bj.z.value=z;                
+    }            
+</script>   
+
+<script language="JavaScript">
+    function gbtt(edf){
+        var a=edf.hsa.value;
+        var b=edf.hsb.value;
+        if(a==0)
+            if(b==0){
+                 frmpt.x.value="PTVSN";
+            }
+            else  
+               frmpt.x.value="PTVN";
+        else{
+            var x;
+            x=-b/a;
+            edf.x.value=x;
+        }                   
+    }
+</script>  
+
+<script language="JavaScript">
+    function gbvn(eeer){
+        var a=eeer.hsa.value;
+        var b=eeer.hsb.value;
+        var c=eeer.hsc.value;
+        var delta=( b * b) - 4* (a * c);
+        var d= -b / (2 * a);
+        if(delta<0)
+            eeer.x.value="PTVN";
+            else if(delta==0){
+                eeer.x.value= d;
+            }
+        else{
+            var e;
+            e= (- b + Math.sqrt(delta)) / 2 * a;
+            var f;
+            f= (- b - Math.sqrt(delta)) / 2 * a;
+            eeer.x.value= e +','+ f;
+        }                   
+    }
+</script> 
     </head>
 
     <body>
@@ -112,6 +191,45 @@
                 NamSinh = prompt("Năm sinh của bạn ? :","");
                 alert("Tuổi của bạn là: "+ (NamHienTai-NamSinh));
 
-            </script>  
+            </script> 
+            <!-- 11 tạo trang web sau và xử lý -->
+            <form name="bj" align="justify">
+                <label for="x">Nhập giá trị số thứ nhất: </label> 
+                <input type="text" name="x" value="" ></p>  
+                <br>            
+               <input type="button" name="cong" onclick="tinhq(this.form)" value="+">                
+               <input type="button" name="tru" onclick="tinhe(this.form)" value="-">
+               <input type="button" name="nhan" onclick="tinhw(this.form)" value="*">               
+               <input type="button" name="chia" onclick="tinhr(this.form)" value="/">
+               <input type="button" name="mu" onclick="tinht(this.form)" value="^"><br>
+               <label for="y">Nhập giá trị số thứ hai: </label> 
+               <input type="text" name="y" value="" ><br>
+               <br>
+               <label for="Kết quả">Kết quả:</label>
+               <input type="text" name="z"><br>
+           </form>
+           <!-- 12. Giải phương trình bậc 1 bằng giao diện form -->
+           <p align="center">  
+            <b>ax + b = 0</b>          
+            <form name="efd" align="center">
+                Hệ số a:<input type="text" name="hsa" value=""><br>
+                Hệ số b: <input type="text" name="hsb" value=""><br>
+                Nghiệm: <input type="text" name="x" value=""><br>
+                <input type="button" value="Giải" onclick="gbtt(this.form)">
+                <input type="reset" value="Làm lại">
+            </form>
+        </p>  
+        <!-- 13. Giải phương trình bậc 1 bằng giao diện form -->
+        <p align="right">  
+            <b>ax<sup>2</sup> + bx + c = 0</b>          
+            <form name="eeer" align="right">
+                Hệ số a:<input type="text" name="hsa" value=""><br>
+                Hệ số b: <input type="text" name="hsb" value=""><br>
+                Hệ số c: <input type="text" name="hsc" value=""><br>
+                Nghiệm: <input type="text" name="x" value=""><br>
+                <input type="button" value="Giải" onclick="gbvn(this.form)">
+                <input type="reset" value="Làm lại">
+            </form>
+        </p>
     </body>
 </html>
